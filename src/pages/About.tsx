@@ -36,23 +36,27 @@ export default function About() {
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="grid grid-cols-2 gap-4"
+            className="grid grid-cols-2 gap-6"
           >
-            <div className="glass-card p-8 flex flex-col justify-center items-center text-center">
+            <div className="glass-card p-8 flex flex-col justify-center items-center text-center aspect-square md:aspect-auto md:h-40 relative group overflow-hidden">
+               <div className="absolute inset-0 bg-crypto-green/5 opacity-0 group-hover:opacity-100 transition-opacity" />
               <div className="text-4xl font-bold text-crypto-green mb-2">5+</div>
-              <div className="text-xs text-slate-500 uppercase tracking-widest">{t('about.stat1')}</div>
+              <div className="text-[10px] text-slate-500 uppercase tracking-widest font-bold">{t('about.stat1')}</div>
             </div>
-            <div className="glass-card p-8 flex flex-col justify-center items-center text-center mt-8">
+            <div className="glass-card p-8 flex flex-col justify-center items-center text-center aspect-square md:aspect-auto md:h-40 relative group overflow-hidden">
+               <div className="absolute inset-0 bg-crypto-blue/5 opacity-0 group-hover:opacity-100 transition-opacity" />
               <div className="text-4xl font-bold text-crypto-blue mb-2">120+</div>
-              <div className="text-xs text-slate-500 uppercase tracking-widest">{t('about.stat2')}</div>
+              <div className="text-[10px] text-slate-500 uppercase tracking-widest font-bold">{t('about.stat2')}</div>
             </div>
-            <div className="glass-card p-8 flex flex-col justify-center items-center text-center -mt-8">
+            <div className="glass-card p-8 flex flex-col justify-center items-center text-center aspect-square md:aspect-auto md:h-40 relative group overflow-hidden">
+               <div className="absolute inset-0 bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity" />
               <div className="text-4xl font-bold text-white mb-2">15+</div>
-              <div className="text-xs text-slate-500 uppercase tracking-widest">{t('about.stat3')}</div>
+              <div className="text-[10px] text-slate-500 uppercase tracking-widest font-bold">{t('about.stat3')}</div>
             </div>
-            <div className="glass-card p-8 flex flex-col justify-center items-center text-center">
+            <div className="glass-card p-8 flex flex-col justify-center items-center text-center aspect-square md:aspect-auto md:h-40 relative group overflow-hidden">
+               <div className="absolute inset-0 bg-purple-400/5 opacity-0 group-hover:opacity-100 transition-opacity" />
               <div className="text-4xl font-bold text-purple-400 mb-2">0</div>
-              <div className="text-xs text-slate-500 uppercase tracking-widest">{t('about.stat4')}</div>
+              <div className="text-[10px] text-slate-500 uppercase tracking-widest font-bold">{t('about.stat4')}</div>
             </div>
           </motion.div>
         </div>
