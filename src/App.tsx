@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { Routes, Route, useLocation, BrowserRouter } from 'react-router-dom';
+import { Routes, Route, useLocation, HashRouter as Router } from 'react-router-dom';
 import { useEffect } from 'react';
 import { LanguageProvider } from './context/LanguageContext';
 import Navbar from './components/Navbar';
@@ -46,9 +46,9 @@ function AppContent() {
 export default function App() {
   return (
     <LanguageProvider>
-      <BrowserRouter>
+      <Router>
         <AppContent />
-      </BrowserRouter>
+      </Router>
     </LanguageProvider>
   );
 }
